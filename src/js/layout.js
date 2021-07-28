@@ -28,11 +28,14 @@ const Layout = () => {
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
-						<Route exact path="/single/:theid">
+						<Route exact path="/single/people/:theid">
 							<Single />
 						</Route>
-						<Route>
-							<h1>Not found!</h1>
+						<Route exact path="/single/vehicles/:theid">
+							<Single />
+						</Route>
+						<Route exact path="/single/planets/:theid">
+							<Single />
 						</Route>
 					</Switch>
 					<Footer />
