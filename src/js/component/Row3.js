@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Vehicles } from "./Vehicles";
+import { Vehicles } from "../views/Vehicles";
 import { Context } from "../store/appContext";
 
 export const Row3 = () => {

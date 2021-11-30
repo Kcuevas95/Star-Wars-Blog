@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Card } from "./Card";
+import { Characters } from "../views/Characters";
 import { Context } from "../store/appContext";
+import "../../styles/home.scss";
 
 export const Row = () => {
 	const { store } = useContext(Context);
@@ -8,7 +9,7 @@ export const Row = () => {
 		<div className="row mb-5">
 			{store.characters.map((item, index) => {
 				return (
-					<Card
+					<Characters
 						key={index}
 						name={item.name}
 						gender={item.gender}
